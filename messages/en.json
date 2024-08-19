@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "navbar": {
+    "About": "About",
+    "Countries": "Countries",
+    "Services": "Services",
+    "News": "News",
+    "Members": "Members",
+    "Contact": "Contact Us"
+  }
+}

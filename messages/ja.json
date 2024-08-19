@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "ヤッホー"
+  },
+  "navbar": {
+    "About": "私の事",
+    "Countries": "国",
+    "Services": "サービス",
+    "News": "ニュース",
+    "Members": "メンバー",
+    "Contact": "お問い合わせ"
+  }
+}
