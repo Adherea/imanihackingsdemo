@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation"; // Import useRouter
 
 function Course() {
   const t = useTranslations("company");
+  const router = useRouter();
+  const pathname = usePathname(); // Mendapatkan URL saat ini
+  const handleHomeRedirect = () => {
+    const currentLocale = pathname.split("/")[1]; // Ekstrak locale dari URL
+    router.push(`/${currentLocale}/`); // Navigasi ke halaman home dengan locale yang benar
+  };
 
   return (
     <section>
@@ -15,9 +23,9 @@ function Course() {
         <div>
           <ul className="w-fit mx-auto">
             <li>
-              <Link href="/" className="group relative text-center">
+              <a onClick={handleHomeRedirect} className="group relative text-center cursor-pointer">
                 {t("home")}
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

@@ -182,5 +182,46 @@
       "knowledge3": "Database Knowledge",
       "knowledge4": "Analysis Tools"
     }
+  },
+  "aboutpage": {
+    "home": "Back To Home",
+    "title": "History",
+    "desc": "IMANI Hacking is a term that incorporates elements from Swahili, specifically 'imani' and 'hacking'. This name combines the following components: Belief: 'IMANI' in Swahili represents 'belief', emphasizing strong convictions in personal beliefs and dreams. Hacking: 'Hacking' refers to the act of using technology and knowledge to discover new methods, solve problems, and pursue possibilities. In this context, it underscores the development of skills and creativity as a technician to shape the future. Now (Ima ni): The Japanese phrase '今に' (Ima ni) is added to 'IMANI Hacking,' emphasizing the importance of seizing the current moment and focusing on the 'now' to realize dreams and goals. This element underscores the intention to take action at the right time.",
+    "subtitle": "Global growth",
+    "desc2": "This boot camp was initially developed as a program with Tanzania as its first offering destination. Since then, it has expanded to neighboring African countries and various Asian nations. Therefore, 'IMANI Hacking' symbolizes an IT boot camp that harnesses individual beliefs, technical skills, and the present moment to pursue possibilities, emphasizing the development of new services, the cultivation of a global mindset, self-realization, and creativity from emerging countries.",
+    "ready": "Ready to supercharge your IT skills at IMANI HACKING BOOTCAMP?",
+    "subready": "So, what are you waiting for? Join IMANI HACKING BOOTCAMP today and unlock your IT potential with our expert-designed programs for beginners and professionals. Transform knowledge into formidable skills, embrace flexibility through online learning, and embark on a journey to IT excellence and innovation!",
+    "button": "JOIN US NOW!"
+  },
+  "contentpage": {
+    "home": "Back To Home",
+    "title": "Contents",
+    "session1": "Video Learning Session",
+    "desc1": "Students can select video courses corresponding to their current levels.",
+    "session2": "Mentoring Session",
+    "desc2": "Students meet with mentors to ask questions about the course content and receive guidance on their future plans.",
+    "session3": "Lesson Sessions",
+    "desc3": "Students enrolled in the same course participate in thematic online sessions covering topics such as technology, soft skills, projects, and engage in group discussions.",
+    "title2": "Our Training process",
+    "date1": "20th, 21st, 24th, 26th April",
+    "agenda": "Screening",
+    "date2": "1st May ~ 21th May",
+    "agenda2": "Choose Students",
+    "date3": "22th May ~ 28th May",
+    "agenda3": "First Payment",
+    "date4": "1st June ~ 4th June",
+    "agenda4": "Decide which course and make a group /Allocate each mentor /Distribute and Sign Enrollment Agreement",
+    "date5": "Start from 12th June",
+    "agenda5": "the student start to learn from video courses.",
+    "date6": "17th July",
+    "agenda6": "Start developing a real software by each group",
+    "date7": "7th August",
+    "agenda7": "Start preparing a presentation by each team.",
+    "date8": "14th August",
+    "agenda8": "Prepare a presentation by each team.",
+    "date9": "27th August",
+    "agenda9": "Final Presentation by students",
+    "date10": "End of August",
+    "agenda10": "Giving a certification /disscuss to join the real project as a freelancer."
   }
 }
