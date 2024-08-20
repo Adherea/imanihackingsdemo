@@ -51,8 +51,8 @@ function About() {
         </div>
       </div>
 
-      <div className="container mx-auto text-center py-10 md:px-5">
-        <h1 className="text-4xl py-9">{t("ready")}</h1>
+      <div className="container mx-auto text-center py-10 md:px-5 px-3">
+        <h1 className="text-xl md:text-4xl py-9">{t("ready")}</h1>
         <p className="max-w-4xl mx-auto py-4">{t("subready")}</p>
         <div className="py-10">
           <Link href={`/${pathname.split("/")[1]}/register`} className="bg-[#407BFF] text-white rounded-md py-3 px-5">

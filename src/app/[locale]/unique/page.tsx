@@ -45,7 +45,7 @@ function Page() {
         <div className="py-14 px-8">
           <div className="max-w-7xl mx-auto flex md:flex-col-reverse lg:flex-row flex-col-reverse items-center justify-between">
             <div>
-              <h1 className="py-5 text-3xl">{t("session1")}</h1>
+              <h1 className="py-5 text-2xl md:text-3xl">{t("session1")}</h1>
               <p className="max-w-xl">{t("desc1")}</p>
             </div>
 
@@ -55,7 +55,7 @@ function Page() {
           </div>
           <div className="max-w-7xl mx-auto flex md:flex-col-reverse py-7 lg:flex-row flex-col-reverse items-center justify-between">
             <div>
-              <h1 className="py-5 text-3xl">{t("session2")}</h1>
+              <h1 className="py-5 text-2xl md:text-3xl">{t("session2")}</h1>
               <p className="max-w-xl">{t("desc2")}</p>
             </div>
 
@@ -65,7 +65,7 @@ function Page() {
           </div>
           <div className="max-w-7xl mx-auto flex md:flex-col-reverse lg:flex-row flex-col-reverse items-center justify-between">
             <div>
-              <h1 className="py-5 text-3xl">{t("session3")}</h1>
+              <h1 className="py-5 text-2xl md:text-3xl">{t("session3")}</h1>
               <p className="max-w-xl">{t("desc3")}</p>
             </div>
 

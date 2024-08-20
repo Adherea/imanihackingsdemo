@@ -37,11 +37,11 @@ function Page() {
         </div>
       </nav>
       <div className="px-9">
-        <h1 className="text-center text-4xl font-semibold py-10">{t("title")}</h1>
+        <h1 className="text-center text-2xl md:text-4xl font-semibold py-10">{t("title")}</h1>
 
         <div className="max-w-7xl mx-auto flex md:flex-col-reverse lg:flex-row flex-col-reverse items-center justify-between">
           <div className="">
-            <h1 className="py-5 text-3xl ">{t("session1")}</h1>
+            <h1 className="py-5 text-xl md:text-3xl ">{t("session1")}</h1>
             <p className="max-w-xl">{t("desc1")}</p>
           </div>
 
@@ -51,7 +51,7 @@ function Page() {
         </div>
         <div className="max-w-7xl mx-auto flex md:flex-col-reverse py-7 lg:flex-row flex-col-reverse items-center justify-between">
           <div className="">
-            <h1 className="py-5 text-3xl ">{t("session2")}</h1>
+            <h1 className="text-xl md:text-3xl ">{t("session2")}</h1>
             <p className="max-w-xl">{t("desc2")}</p>
           </div>
 
@@ -61,7 +61,7 @@ function Page() {
         </div>
         <div className="max-w-7xl mx-auto flex md:flex-col-reverse lg:flex-row flex-col-reverse items-center justify-between">
           <div className="">
-            <h1 className="py-5 text-3xl ">{t("session3")}</h1>
+            <h1 className="py-5 text-xl md:text-3xl ">{t("session3")}</h1>
             <p className="max-w-xl">{t("desc3")}</p>
           </div>
 
@@ -71,10 +71,10 @@ function Page() {
         </div>
       </div>
       <div className="w-fit mx-auto py-20 px-8">
-        <h1 className="text-center text-4xl py-16">{t("title2")}</h1>
+        <h1 className="text-center text-xl md:text-3xl py-16">{t("title2")}</h1>
         <Image src={training} alt="training.png" width={900} />
 
-        <h1 className="py-24 text-center text-4xl font-semibold">{t("Our updated schedule")}</h1>
+        <h1 className="py-24 text-center text-xl md:text-3xl font-semibold">{t("Our updated schedule")}</h1>
         <table className="min-w-full border border-gray-300">
           <thead>
             <tr>

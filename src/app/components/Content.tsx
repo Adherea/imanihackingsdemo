@@ -25,18 +25,18 @@ function Content() {
           <div className="grid md:grid-cols-2 md:px-9  lg:px-8 lg:grid-cols-3 grid-cols-1 px-10  gap-6  py-14">
             <div className="text-center">
               <FontAwesomeIcon icon={faCirclePlay} className="text-5xl" />
-              <h1 className="text-3xl py-4">{t("Heading")}</h1>
-              <p>{t("Paragraph")}</p>
+              <h1 className="text-2xl md:text-4xl py-4">{t("Heading")}</h1>
+              <p className="text-base  md:text-2xl">{t("Paragraph")}</p>
             </div>
             <div className="text-center">
               <FontAwesomeIcon icon={faChalkboardTeacher} className="text-5xl" />
-              <h1 className="text-3xl py-4">{t("Heading2")}</h1>
-              <p>{t("Paragraph2")}</p>
+              <h1 className="text-2xl md:text-4xl py-4">{t("Heading2")}</h1>
+              <p className="text-base  md:text-2xl">{t("Paragraph2")}</p>
             </div>
             <div className="text-center">
               <FontAwesomeIcon icon={faLaptop} className="text-5xl" />
-              <h1 className="text-3xl py-4">{t("Heading3")}</h1>
-              <p>{t("Paragraph3")}</p>
+              <h1 className="text-2xl md:text-4xl py-4">{t("Heading3")}</h1>
+              <p className="text-base  md:text-2xl">{t("Paragraph3")}</p>
             </div>
           </div>
           <div className="mx-auto w-fit">
@@ -46,40 +46,35 @@ function Content() {
           </div>
         </div>
         <div id="services" className="lg:py-36 py-24">
-          <h1 className="text-center text-4xl font-semibold">Our lesson category</h1>
-          <div className="grid md:grid-cols-2 md:px-6 lg:grid-cols-3 grid-cols-1 px-10 lg:px-0 gap-6 py-14">
-            {/* {DataCategory.map((x) => (
-              <div key={x.id}>
-                <Category pic={x.images} title={x.title} desc={x.desc} />
-              </div>
-            ))} */}
+          <h1 className="text-center text-4xl font-semibold">{t("Title2")}</h1>
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 md:px-6 lg:grid-cols-3 grid-cols-1 px-10 lg:px-0 gap-6 py-14">
             <div className="text-center">
-              <Image width={100} src={picture1} alt="pic" className="w-fit mx-auto" />
+              <Image width={120} src={picture1} alt="pic" className=" mx-auto" />
               <h2>{t("Subheading1")}</h2>
               <p>{t("Subparagraph1")}</p>
             </div>
-            <div className="text-center">
-              <Image width={100} src={picture2} alt="pic" className="w-fit mx-auto" />
+            <div className="text-center pt-4 md:pt-0">
+              <Image width={120} src={picture2} alt="pic" className=" mx-auto" />
               <h2>{t("Subheading2")}</h2>
               <p>{t("Subparagraph2")}</p>
             </div>
-            <div className="text-center">
-              <Image width={100} src={picture3} alt="pic" className="w-fit mx-auto" />
+            <div className="text-center pt-4 md:pt-0">
+              <Image width={120} src={picture3} alt="pic" className=" mx-auto" />
               <h2>{t("Subheading3")}</h2>
               <p>{t("Subparagraph3")}</p>
             </div>
-            <div className="text-center">
-              <Image width={100} src={picture4} alt="pic" className="w-fit mx-auto" />
+            <div className="text-center pt-4 md:pt-0">
+              <Image width={120} src={picture4} alt="pic" className=" mx-auto" />
               <h2>{t("Subheading4")}</h2>
               <p>{t("Subparagraph4")}</p>
             </div>
-            <div className="text-center">
-              <Image width={100} src={picture5} alt="pic" className="w-fit mx-auto" />
+            <div className="text-center pt-4 md:pt-0">
+              <Image width={120} src={picture5} alt="pic" className=" mx-auto" />
               <h2>{t("Subheading5")}</h2>
               <p>{t("Subparagraph5")}</p>
             </div>
-            <div className="text-center">
-              <Image width={100} src={picture6} alt="pic" className="w-fit mx-auto" />
+            <div className="text-center pt-4 md:pt-0">
+              <Image width={120} src={picture6} alt="pic" className=" mx-auto" />
               <h2>{t("Subheading6")}</h2>
               <p>{t("Subparagraph6")}</p>
             </div>

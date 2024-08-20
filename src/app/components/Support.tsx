@@ -7,12 +7,12 @@ function Support() {
   return (
     <section className="bg-[#a2d9ff] md:py-6 md:px-5">
       <div className="">
-        <h1 className="text-white text-4xl text-center">Support By:</h1>
+        <h1 className="text-white text-2xl  md:text-4xl text-center">Support By:</h1>
       </div>
       <div className="flex lg:flex-row md:flex-col flex-col py-11 md:py-0 items-center justify-center gap-4">
-        <Image src={logo2} width={200} alt="logo" />
-        <Image src={logo1} width={300} alt="logo" />
-        <Image src={logo3} width={300} alt="logo" />
+        <Image src={logo2} alt="logo" className="md:w-1/6 w-1/3" />
+        <Image src={logo1} alt="logo" className="md:w-1/6 w-1/3" />
+        <Image src={logo3} alt="logo" className="md:w-1/6 w-1/3" />
       </div>
     </section>
   );

@@ -49,7 +49,7 @@ function Country() {
   }, []);
 
   return (
-    <section id="countries" className="py-28 px-8 md:px-0">
+    <section id="countries" className="py-28 px-3 md:px-0">
       <div className="container mx-auto bg-[#ADD8E6] rounded-xl px-6 py-12">
         <h1 className="text-center text-[#212A94] md:text-5xl text-3xl font-semibold py-10">{t("title")}</h1>
         <Image src={map} alt="map.jpg" className="w-full" />
@@ -77,27 +77,27 @@ function Country() {
         </div>
       </div>
       <div className="py-20">
-        <h1 className="text-center text-4xl font-medium">{a("title")}</h1>
+        <h1 className="text-center text-2xl  md:text-4xl font-medium ">{a("title")}</h1>
         <div ref={countUpSectionRef} className="max-w-xl mx-auto text-center py-24 grid grid-cols-2 gap-8">
           <div data-aos="fade-up" className="">
             <FontAwesomeIcon className="text-6xl text-[#FF5081]" icon={faBlackboard} />
-            <h1 className="py-3 text-4xl font-bold">{startCounting && <CountUp start={0} end={354} duration={3} />}</h1>
-            <h4 className="text-gray-500">{a("achievement1.name")}</h4>
+            <h1 className="py-3 text-2xl  md:text-4xl font-bold">{startCounting && <CountUp start={0} end={354} duration={3} />}</h1>
+            <h4 className="text-gray-500 text-xs md:text-xl">{a("achievement1.name")}</h4>
           </div>
           <div data-aos="fade-up" className="">
             <FontAwesomeIcon className="text-6xl text-[#B2D672]" icon={faPerson} />
-            <h1 className="py-3 text-4xl font-bold">{startCounting && <CountUp start={0} end={746} duration={3} />}</h1>
-            <h4 className="text-gray-500">{a("achievement2.name")}</h4>
+            <h1 className="py-3 text-2xl  md:text-4xl font-bold">{startCounting && <CountUp start={0} end={746} duration={3} />}</h1>
+            <h4 className="text-gray-500 text-xs md:text-xl">{a("achievement2.name")}</h4>
           </div>
           <div data-aos="fade-up" className="">
             <FontAwesomeIcon className="text-6xl text-[#48CEBB]" icon={faTrophy} />
-            <h1 className="py-3 text-4xl font-bold">{startCounting && <CountUp start={0} end={1} duration={3} />}</h1>
-            <h4 className="text-gray-500">{a("achievement3.name")}</h4>
+            <h1 className="py-3 text-2xl  md:text-4xl font-bold">{startCounting && <CountUp start={0} end={1} duration={3} />}</h1>
+            <h4 className="text-gray-500 text-xs md:text-xl">{a("achievement3.name")}</h4>
           </div>
           <div data-aos="fade-up" className="">
             <FontAwesomeIcon className="text-6xl text-[#F18B50]" icon={faGlobe} />
-            <h1 className="py-3 text-4xl font-bold">{startCounting && <CountUp start={0} end={5} duration={3} />}</h1>
-            <h4 className="text-gray-500">{a("achievement4.name")}</h4>
+            <h1 className="py-3 text-2xl  md:text-4xl font-bold">{startCounting && <CountUp start={0} end={5} duration={3} />}</h1>
+            <h4 className="text-gray-500 text-xs md:text-xl">{a("achievement4.name")}</h4>
           </div>
         </div>
       </div>

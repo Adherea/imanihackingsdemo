@@ -42,7 +42,7 @@ function About() {
             <Image className="fancyBorder border-4 border-[#58BBFF] rounded-[29%_71%_68%_32%_/_24%_25%_75%_76%]" src={univ} width={400} alt="univ" />
           </div>
           <div>
-            <h1 className="text-4xl">{t("ask")}</h1>
+            <h1 className="text-2xl md:text-4xl">{t("ask")}</h1>
             <p className="max-w-xl py-5 pt-12 md:text-xl lg:text-lg">{t("reason")}</p>
             <Link href={`/${selectedLanguage}/about`} className="bg-[#58BBFF] text-white rounded-md py-3 px-5">
               {t("button")}

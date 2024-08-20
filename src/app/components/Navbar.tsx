@@ -103,7 +103,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="">
-        <select className="text-[#000080] bg-transparent rounded-md border border-[#000080] py-1 px-7" onChange={selectChange} value={selectedLanguage}>
+        <select className="text-[#000080] bg-transparent rounded-md border border-[#000080] py-1 px-2" onChange={selectChange} value={selectedLanguage}>
           <option value="en">English</option>
           <option value="ja">Japanese</option>
         </select>
