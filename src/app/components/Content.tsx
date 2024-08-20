@@ -25,18 +25,18 @@ function Content() {
           <div className="grid md:grid-cols-2 md:px-9  lg:px-8 lg:grid-cols-3 grid-cols-1 px-10  gap-6  py-14">
             <div className="text-center">
               <FontAwesomeIcon icon={faCirclePlay} className="text-5xl" />
-              <h1 className="text-2xl md:text-4xl py-4">{t("Heading")}</h1>
-              <p className="text-base  md:text-2xl">{t("Paragraph")}</p>
+              <h1 className="text-xl md:text-2xl py-4">{t("Heading")}</h1>
+              <p className="text-xs md:text-xl">{t("Paragraph")}</p>
             </div>
             <div className="text-center">
               <FontAwesomeIcon icon={faChalkboardTeacher} className="text-5xl" />
-              <h1 className="text-2xl md:text-4xl py-4">{t("Heading2")}</h1>
-              <p className="text-base  md:text-2xl">{t("Paragraph2")}</p>
+              <h1 className="text-xl md:text-2xl py-4">{t("Heading2")}</h1>
+              <p className="text-xs md:text-xl">{t("Paragraph2")}</p>
             </div>
             <div className="text-center">
               <FontAwesomeIcon icon={faLaptop} className="text-5xl" />
-              <h1 className="text-2xl md:text-4xl py-4">{t("Heading3")}</h1>
-              <p className="text-base  md:text-2xl">{t("Paragraph3")}</p>
+              <h1 className="text-xl md:text-2xl py-4">{t("Heading3")}</h1>
+              <p className="text-xs md:text-xl">{t("Paragraph3")}</p>
             </div>
           </div>
           <div className="mx-auto w-fit">
