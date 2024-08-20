@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import logo from "../../../../public/images/logo.png";
 import picture1 from "../../../../public/images/contents/Picture1.jpg";
@@ -15,7 +14,6 @@ function Page() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // Handle redirect ke home dengan locale yang benar
   const handleHomeRedirect = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const currentLocale = pathname.split("/")[1];
@@ -24,7 +22,7 @@ function Page() {
 
   return (
     <section>
-      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0]">
+      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0] ">
         <div>
           <Image src={logo} width={140} alt="logo" />
         </div>

@@ -17,12 +17,10 @@ function Page() {
   const t = useTranslations("uniq");
   const router = useRouter();
   const pathname = usePathname();
-
-  // Function buat handle redirect ke home dengan locale yang benar
   const handleHomeRedirect = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault(); // Prevent default biar gak langsung redirect
-    const currentLocale = pathname.split("/")[1]; // Ambil locale dari URL
-    router.push(`/${currentLocale}/`); // Redirect ke home dengan locale yang benar
+    e.preventDefault();
+    const currentLocale = pathname.split("/")[1];
+    router.push(`/${currentLocale}/`);
   };
 
   return (

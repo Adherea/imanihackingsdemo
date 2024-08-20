@@ -1,9 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-// Menambahkan tipe untuk properti yang diterima oleh komponen Shinbun
 type ShinbunProps = {
-  images: string | StaticImageData; // images bisa berupa string URL atau StaticImageData
+  images: string | StaticImageData;
   title: string;
   desc: string;
 };

@@ -11,11 +11,11 @@ import { useRouter, usePathname } from "next/navigation";
 function About() {
   const t = useTranslations("aboutpage");
   const router = useRouter();
-  const pathname = usePathname(); // Ambil URL saat ini
+  const pathname = usePathname();
 
   return (
     <section className="bg-[#F8F8F8]">
-      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0]">
+      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0] ">
         <div>
           <Image src={logo} width={140} alt="logo" />
         </div>

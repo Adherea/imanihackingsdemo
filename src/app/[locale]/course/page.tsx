@@ -1,22 +1,21 @@
 "use client";
 import React from "react";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation"; // Import useRouter
+import { usePathname, useRouter } from "next/navigation";
 
 function Course() {
   const t = useTranslations("company");
   const router = useRouter();
-  const pathname = usePathname(); // Mendapatkan URL saat ini
+  const pathname = usePathname();
   const handleHomeRedirect = () => {
-    const currentLocale = pathname.split("/")[1]; // Ekstrak locale dari URL
-    router.push(`/${currentLocale}/`); // Navigasi ke halaman home dengan locale yang benar
+    const currentLocale = pathname.split("/")[1];
+    router.push(`/${currentLocale}/`);
   };
 
   return (
     <section>
-      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0]">
+      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0 ">
         <div>
           <Image src="/images/logo.png" alt="logo" width={140} height={200} />
         </div>
@@ -36,7 +35,6 @@ function Course() {
 
         <div className="bg-gray-50 p-8">
           <div className="container mx-auto grid lg:grid-cols-4 grid-cols-1 gap-8">
-            {/* Full Stack Engineer Course */}
             <div className="bg-white shadow-lg p-6 rounded-lg">
               <h2 className="text-xl font-bold mb-4">{t("course1.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
@@ -63,8 +61,6 @@ function Course() {
                 </li>
               </ul>
             </div>
-
-            {/* Machine Learning Engineer Course */}
             <div className="bg-white shadow-lg p-6 rounded-lg">
               <h2 className="text-xl font-bold mb-4">{t("course2.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
@@ -113,8 +109,6 @@ function Course() {
                 </li>
               </ul>
             </div>
-
-            {/* UI/UX/Web Designer Course */}
             <div className="bg-white shadow-lg p-6 rounded-lg">
               <h2 className="text-xl font-bold mb-4">{t("course3.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
@@ -140,8 +134,6 @@ function Course() {
                 </li>
               </ul>
             </div>
-
-            {/* Data Analyst Course */}
             <div className="bg-white shadow-lg p-6 rounded-lg">
               <h2 className="text-xl font-bold mb-4">{t("course5.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">

@@ -1,5 +1,4 @@
 import React from "react";
-
 import logo1 from "../../../public/images/support/daraJapan.png";
 import logo2 from "../../../public/images/support/79f00f_4e5acee7ad284349865964e001c60413~mv2.png";
 import logo3 from "../../../public/images/support/tokyouHostel.png";

@@ -20,10 +20,11 @@ export default async function RootLayout({ children, params: { locale } }: { chi
   } catch (error) {
     notFound();
   }
+
   return (
     <html lang={locale} className="scroll-smooth">
       <head>
-        <link rel="icon" href="/images/vectors/title/coding.png" />
+        <link rel="icon" href="../../public/images/vectors/title/coding.png" />
       </head>
       <body className="bg-[#F8F8F8] font-poppins">
         <NextIntlClientProvider locale={locale} messages={messages}>

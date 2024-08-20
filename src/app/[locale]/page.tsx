@@ -7,10 +7,8 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import News from "../components/News";
 import Teach from "../components/Teach";
-
 export default function Home() {
   const t = useTranslations("HomePage");
-
   return (
     <section>
       <div>

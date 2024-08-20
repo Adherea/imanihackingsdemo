@@ -6,5 +6,5 @@ export default createMiddleware({
 });
 
 export const config = {
-  matcher: ["/((?!api|_next|.*\\..*).*)"], // Mencakup semua rute kecuali yang dikecualikan
+  matcher: ["/((?!api|_next|.*\\..*).*)"],
 };

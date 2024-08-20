@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-
 import map from "../../../public/images/assets2/countries.png";
 import tanzania from "../../../public/images/flags/tanzania.jpg";
 import indonesia from "../../../public/images/flags/indonesia.jpg";
@@ -31,11 +30,11 @@ function Country() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setStartCounting(true);
-            observer.disconnect(); // Stop observing after triggering
+            observer.disconnect();
           }
         });
       },
-      { threshold: 0.5 } // Adjust threshold as needed
+      { threshold: 0.5 }
     );
 
     if (countUpSectionRef.current) {

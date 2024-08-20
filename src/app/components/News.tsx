@@ -59,13 +59,10 @@ function News() {
           >
             <SwiperSlide>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 items-center px-5 py-10 gap-6">
-                {newss.map((x) => {
+                {newss.map((x, index) => {
                   return (
                     <>
-                      {/* <div key={x.id} className="h-full w-full bg-white py-9 px-6 rounded-xl text-center hover:cursor-pointer duration-700 hover:-translate-y-6 hover:shadow-2xl ">
-                        <Shinbun images={x.images} title={x.title} desc={x.desc} />
-                      </div> */}
-                      <div className="text-center h-full w-full bg-white py-9 px-6 rounded-xl text-center hover:cursor-pointer duration-700 hover:-translate-y-6 hover:shadow-2xl ">
+                      <div key={index} className=" h-full w-full bg-white py-9 px-6 rounded-xl text-center hover:cursor-pointer duration-700 hover:-translate-y-6 hover:shadow-2xl ">
                         <div className="w-fit mx-auto">
                           <Image src={x.images} alt="picture.png" />
                         </div>
@@ -80,13 +77,6 @@ function News() {
           </Swiper>
         </div>
       </div>
-      {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#a2d9ff"
-          fill-opacity="1"
-          d="M0,160L48,165.3C96,171,192,181,288,165.3C384,149,480,107,576,106.7C672,107,768,149,864,170.7C960,192,1056,192,1152,181.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg> */}
     </section>
   );
 }

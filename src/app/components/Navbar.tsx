@@ -21,7 +21,6 @@ export default function Navbar() {
     setSelectedLanguage(nextLocale);
     localStorage.setItem("preferredLanguage", nextLocale);
 
-    // Redirect ke halaman yang sama dengan locale yang dipilih
     const pathWithoutLocale = pathname.split("/").slice(2).join("/");
     router.replace(`/${nextLocale}/${pathWithoutLocale}`);
   };
@@ -30,7 +29,6 @@ export default function Navbar() {
     const savedLocale = localStorage.getItem("preferredLanguage") || "en";
     setSelectedLanguage(savedLocale);
 
-    // Pastikan halaman berfungsi dengan locale yang benar saat memuat ulang
     const currentLocale = pathname.split("/")[1];
     if (currentLocale !== savedLocale) {
       router.replace(`/${savedLocale}${pathname.split("/").slice(2).join("/")}`);
@@ -75,37 +73,37 @@ export default function Navbar() {
       <div ref={menuRef}>
         <ul className={`${navbar ? "md:flex gap-4 hidden" : "items-center gap-4 md:flex absolute bg-blue-400 rounded-md py-4 px-6 right-9"}`}>
           <li>
-            <Link href={`/${selectedLanguage}/about`} className="group relative custom-link">
+            <a href={"#about"} className="group relative custom-link">
               {t("About")}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href={`/${selectedLanguage}/countries`} className="group relative custom-link">
+            <a href={"#countries"} className="group relative custom-link">
               {t("Countries")}
-            </Link>
+            </a>
           </li>
           <li className="relative group">
-            <Link href={`/${selectedLanguage}/services`} className="relative custom-link">
+            <a href={"#services"} className="relative custom-link">
               {t("Services")}
-            </Link>
+            </a>
             <Link href={`/${selectedLanguage}/course`} className="absolute left-0 text-xs w-[8vw] hidden group-hover:block bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded z-10">
               {t("Company")}
             </Link>
           </li>
           <li>
-            <Link href={`/${selectedLanguage}/news`} className="group relative custom-link">
+            <a href={"#news"} className="group relative custom-link">
               {t("News")}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href={`/${selectedLanguage}/members`} className="group relative custom-link">
+            <a href={`/${selectedLanguage}/members`} className="group relative custom-link">
               {t("Members")}
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
       <div className="">
-        <select className="text-blue-600" onChange={selectChange} value={selectedLanguage}>
+        <select className="text-[#000080] bg-transparent rounded-md border border-[#000080] py-1 px-7" onChange={selectChange} value={selectedLanguage}>
           <option value="en">English</option>
           <option value="ja">Japanese</option>
         </select>
