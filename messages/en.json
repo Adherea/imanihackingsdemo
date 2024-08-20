@@ -223,5 +223,16 @@
     "agenda9": "Final Presentation by students",
     "date10": "End of August",
     "agenda10": "Giving a certification /disscuss to join the real project as a freelancer."
+  },
+  "uniq": {
+    "home": "Back To Home",
+    "title": "Our Uniqueness",
+    "session1": "Global Empowerment",
+    "desc1": "Through an integrated program, participants can develop a global mindset, entrepreneurial spirit, and problem-solving abilities. Furthermore, they graduate with the perseverance of lifelong learning and the ability to work effectively within teams. This enables young individuals from emerging countries to establish connections with society and become a source of income as high-skilled professionals,",
+    "session2": "Career Support",
+    "desc2": "To bridge the gap between job seekers and employers, we provide an environment where participants can gain practical experience by forming teams and receiving support from well-experienced engineers during IMANI bootcamp. For those aspiring to work in Japanese companies or from other countries, we offer lectures on English and Japanese language necessary for business as well as other employability skills, enhancing their chances of a realistic and practical job match.",
+    "session3": "Talent Development",
+    "desc3": "We provide support from mentors who can help participants identify their future goals and design action plans and career paths to achieve them. We also have a job placement support system that includes interview opportunities with potential employers for participants with sufficient experience. Additionally, by creating a cycle that provide lectures to new participants, we ensure that the fruits of learning translate into income, boosting their confidence. This model aims to address the employment needs of young people in emerging countries while resolving Japan's IT talent shortage.",
+    "misc": "By instilling Japanese business ethics, we enhance participants humanity and equip them with sustainable career skills."
   }
 }
