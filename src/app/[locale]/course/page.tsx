@@ -1,16 +1,16 @@
 import React from "react";
-import logo from "../../../public/images/logo.png";
-import Image from "next/image";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import Image from "next/image";
+
 function Course() {
   const t = useTranslations("company");
 
   return (
     <section>
-      <nav className=" flex items-center  text-white justify-between md:px-12 px-5  text-xl bg-[#79c9e0]">
+      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0]">
         <div>
-          <Image src={logo} width={140} alt="logo" />
+          <Image src="/images/logo.png" alt="logo" width={140} height={200} />
         </div>
         <div>
           <ul className="w-fit mx-auto">
@@ -22,14 +22,14 @@ function Course() {
           </ul>
         </div>
       </nav>
-      <div className="">
-        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium pt-12"> {t("title")}</h1>
-
+      <div>
+        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium pt-12">{t("title")}</h1>
         <h1 className="text-center max-w-4xl md:text-2xl mx-auto py-10">{t("desc")}</h1>
 
         <div className="bg-gray-50 p-8">
           <div className="container mx-auto grid lg:grid-cols-4 grid-cols-1 gap-8">
-            <div className="bg-white shadow-lg p-6 rounded-lg ">
+            {/* Full Stack Engineer Course */}
+            <div className="bg-white shadow-lg p-6 rounded-lg">
               <h2 className="text-xl font-bold mb-4">{t("course1.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
                 <li>
@@ -37,7 +37,7 @@ function Course() {
                   <ul className="list-disc ml-6">
                     <li>Python (Flask, FastAPI, Django, Selenium)</li>
                     <li>Go (Echo and Gin) / Swift</li>
-                    <li>Javascript (Node.js, Express JS, ReactJS, NextJS)</li>
+                    <li>JavaScript (Node.js, Express JS, ReactJS, NextJS)</li>
                     <li>Java (Springboot)</li>
                     <li>HTML, HTMX, PHP, CSS, JS</li>
                     <li>My-SQL, PostgreSQL, MongoDB</li>
@@ -53,24 +53,15 @@ function Course() {
                     <li>{t("course1.knowledge4")}</li>
                   </ul>
                 </li>
-                <li>
-                  <strong>Program Design</strong>
-                  <ul className="list-disc ml-6">
-                    <li>Frontend Development: UI design and coding using HTML, CSS, and JavaScript</li>
-                    <li>Backend Development: Implementing server-side processing using Java, PHP, Ruby, Python, etc.</li>
-                    <li>App Development: Learning to develop smartphone apps (iOS and Android) and web apps</li>
-                    <li>Infrastructure Construction and Maintenance: Designing and operating systems utilizing cloud services</li>
-                  </ul>
-                </li>
               </ul>
             </div>
 
             {/* Machine Learning Engineer Course */}
-            <div className="bg-white shadow-lg p-6 rounded-lg ">
-              <h2 className="text-xl font-bold mb-4">Machine Learning Engineer Course</h2>
+            <div className="bg-white shadow-lg p-6 rounded-lg">
+              <h2 className="text-xl font-bold mb-4">{t("course2.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
                 <li>
-                  <strong>Basics of Coding Development</strong>
+                  <strong>{t("course2.knowledge1")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Python (Flask, FastAPI, Django, Selenium)</li>
                     <li>Java</li>
@@ -79,7 +70,7 @@ function Course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Frameworks and Libraries</strong>
+                  <strong>{t("course2.knowledge2")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Scikit-learn</li>
                     <li>TensorFlow</li>
@@ -88,7 +79,7 @@ function Course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Mathematics and Statistics</strong>
+                  <strong>{t("course2.knowledge3")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Probability</li>
                     <li>Regression analysis</li>
@@ -98,7 +89,7 @@ function Course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Data Analysis Skills</strong>
+                  <strong>{t("course2.knowledge4")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Data preprocessing</li>
                     <li>Visualization</li>
@@ -106,7 +97,7 @@ function Course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>User Experience Design</strong>
+                  <strong>{t("course2.knowledge5")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Web scraping</li>
                     <li>Using APIs to collect data from the web</li>
@@ -116,11 +107,11 @@ function Course() {
             </div>
 
             {/* UI/UX/Web Designer Course */}
-            <div className="bg-white shadow-lg p-6 rounded-lg ">
-              <h2 className="text-xl font-bold mb-4">UI/UX/Web Designer Course</h2>
+            <div className="bg-white shadow-lg p-6 rounded-lg">
+              <h2 className="text-xl font-bold mb-4">{t("course3.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
                 <li>
-                  <strong>Basics of Design Skills</strong>
+                  <strong>{t("course3.knowledge1")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Layout, color schemes, and typography</li>
                     <li>Adobe Illustrator, Photoshop, Figma</li>
@@ -129,7 +120,7 @@ function Course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Marketing Skills</strong>
+                  <strong>{t("course3.knowledge2")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Trends of competitors</li>
                     <li>Market changes</li>
@@ -137,17 +128,17 @@ function Course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>User Perspectives</strong>
+                  <strong>{t("course3.knowledge3")}</strong>
                 </li>
               </ul>
             </div>
 
             {/* Data Analyst Course */}
-            <div className="bg-white shadow-lg p-6 rounded-lg ">
-              <h2 className="text-xl font-bold mb-4">Data Analyst Course</h2>
+            <div className="bg-white shadow-lg p-6 rounded-lg">
+              <h2 className="text-xl font-bold mb-4">{t("course5.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
                 <li>
-                  <strong>Basics of Programming Skills</strong>
+                  <strong>{t("course5.knowledge1")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Python / R</li>
                     <li>Data analysis libraries (Pandas, NumPy)</li>
@@ -155,22 +146,16 @@ function Course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Mathematics and Statistics</strong>
-                  <ul className="list-disc ml-6">
-                    <li>Probability</li>
-                    <li>Regression analysis</li>
-                    <li>Hypothesis testing</li>
-                    <li>etc...</li>
-                  </ul>
+                  <strong>{t("course5.knowledge2")}</strong>
                 </li>
                 <li>
-                  <strong>Database Knowledge</strong>
+                  <strong>{t("course5.knowledge3")}</strong>
                   <ul className="list-disc ml-6">
                     <li>SQL</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Analysis Tools</strong>
+                  <strong>{t("course5.knowledge4")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Excel to organize and visualize data</li>
                     <li>How to use web scraping and APIs</li>
