@@ -86,7 +86,7 @@ export default function Navbar() {
                 {t("Services")}
               </a>
               <Link href="/course" className="absolute left-0 text-xs w-[8vw] hidden group-hover:block bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded z-10">
-                {t("Services")}
+                {t("Company")}
               </Link>
             </li>
             <li>

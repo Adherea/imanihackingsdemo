@@ -1,8 +1,11 @@
 import React from "react";
-import logo from "../../public/images/logo.png";
+import logo from "../../../public/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-function course() {
+import { useTranslations } from "next-intl";
+function Course() {
+  const t = useTranslations("company");
+
   return (
     <section>
       <nav className=" flex items-center  text-white justify-between md:px-12 px-5  text-xl bg-[#79c9e0]">
@@ -13,25 +16,24 @@ function course() {
           <ul className="w-fit mx-auto">
             <li>
               <Link href="/" className="group relative text-center">
-                Back To Home
+                {t("home")}
               </Link>
             </li>
           </ul>
         </div>
       </nav>
       <div className="">
-        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium pt-12">Online Courses</h1>
+        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium pt-12"> {t("title")}</h1>
 
-        <h1 className="text-center max-w-4xl md:text-2xl mx-auto py-10">Your Journey to Excellence Begins Here: Partner with Our International IT Bootcamp and Access Top Tech Talent from Across the World.</h1>
+        <h1 className="text-center max-w-4xl md:text-2xl mx-auto py-10">{t("desc")}</h1>
 
         <div className="bg-gray-50 p-8">
           <div className="container mx-auto grid lg:grid-cols-4 grid-cols-1 gap-8">
-            {/* Full Stack Engineer Course */}
             <div className="bg-white shadow-lg p-6 rounded-lg ">
-              <h2 className="text-xl font-bold mb-4">Full Stack Engineer Course</h2>
+              <h2 className="text-xl font-bold mb-4">{t("course1.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
                 <li>
-                  <strong>Basics of Frontend Backend Development</strong>
+                  <strong>{t("course1.knowledge1")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Python (Flask, FastAPI, Django, Selenium)</li>
                     <li>Go (Echo and Gin) / Swift</li>
@@ -43,12 +45,12 @@ function course() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Skills for OS and Middleware</strong>
+                  <strong>{t("course1.knowledge2")}</strong>
                 </li>
                 <li>
-                  <strong>Knowledge and Skills in Cloud Services</strong>
+                  <strong>{t("course1.knowledge3")}</strong>
                   <ul className="list-disc ml-6">
-                    <li>AWS, Azure, Google Cloud</li>
+                    <li>{t("course1.knowledge4")}</li>
                   </ul>
                 </li>
                 <li>
@@ -184,4 +186,4 @@ function course() {
   );
 }
 
-export default course;
+export default Course;

@@ -9,5 +9,175 @@
     "News": "ニュース",
     "Members": "メンバー",
     "Contact": "お問い合わせ"
+  },
+  "hero": {
+    "Heading": "国境を超えたグローバルなテックリーダーを育ております。",
+    "Paragraph": "一緒に国際的なITエンジニアになりましょう！このプログラムは色んなITエンジニアリングスキルを学びたいあなたに、一緒に国際的なITエンジニアやITリーダーになりましょう！",
+    "button": "今参加する"
+  },
+  "about": {
+    "Heading": "未来像",
+    "Paragraph": "将来のためにテクノロジーを一緒に活用する事",
+    "Heading1": "使命",
+    "Paragraph2": "経験豊富ITエンジニアとソフトスキルで国際的なチームに働くを遂げる事",
+    "About": "イマニ　ハッキングについて",
+    "ask": "なぜ ”Imani Hacking “?",
+    "reason": "イマニ・ハッキングはゼロ知識から中級スキルレベルまで学んでおります。このITブートキャンプはやりたいIT仕事学生達に手伝っております。また、このブートキャンプには初心者もプロ向けております。オンラインでやっていますので興味がありますでしょうか？お待ちしております！",
+    "button": "もっと読む"
+  },
+  "content": {
+    "Title": "コンテンツ内容",
+    "Heading": "ビデオ セッション",
+    "Paragraph": "学生達は講義からコースをもらって、しかも、やりたいIT仕事のために優良な知識のテクノロジーを使い方を教えております。",
+    "Heading2": "メンターリング　セッション",
+    "Paragraph2": "プロジェクトや、ソフトスキルや、ハードスキルついて話し合うのためにメンターリング　セッションがあります。その上にメンターと学生の将来の予定について話す事も出来ます。",
+    "Heading3": "講義セッション",
+    "Paragraph3": "週末には学生達がスキル配達についてzoomライブがあります。将来でこのブートキャンプを参加しました後で学生達はIT仕事を準備するために自己啓発やソフトスキルやハードスキルのコースをもらっております。",
+    "Button": "もっと読む",
+    "Title2": "授業部門",
+    "Subheading1": "ウェブ開発",
+    "Subparagraph1": "フロントエンドコース -HTML / Javascript / Phyton",
+    "Subheading2": "UI / UX デサイーン",
+    "Subparagraph2": "デサイーンコンセプトコース例えば：Usability, Accessibility, ユーザーインタフェース",
+    "Subheading3": "情報 & Frameworks",
+    "Subparagraph3": "コード構造を使い方, including Bulma CSS Framework。",
+    "Subheading4": "データベース & セキュリティ",
+    "Subparagraph4": "学生達に一般的なセキュリティの防ぐを紹介しております。例えば SQL-Injection / XSS。",
+    "Subheading5": "ソフトスキル",
+    "Subparagraph5": "問題を解決 / 意思決定/ 批判的思考 / グローバル考え方 / チームとして伝言する事",
+    "Subheading6": "表現スキル",
+    "Subparagraph6": "どういう風に効果的な伝達するを観客にお伝えております。",
+    "Button2": "もっと読む"
+  },
+  "instructors": {
+    "title": "講師",
+    "instructor1": {
+      "name": "Dr Kelechukwu N. Onwukamike",
+      "specialization": "Researcher of Chemistry, Coarching",
+      "desc": "KITドイツとボルドー大学フランスから有機化学と高分子化学の二重博士号を取得し、私の研究は持続可能なセルロースベースの材料に焦点を当てています。現在、私はProcter &amp; Gambleドイツで研究科学者として勤務しています。"
+    },
+    "instructor2": {
+      "name": "Daniel Joseph Makyao",
+      "specialization": "Software Engineer",
+      "desc": " Phyton、Django、PostreSQL、MERN stack (MongoDB, Express, React(Node.js)の経験豊富なエンジニア。最新のテクノロジーを学び続け、最新情報を把握しています。既存の機能の強化から新しい製品の構築まで、すべてのプロジェクトに勤勉さと精度をもたらします。 "
+    },
+    "instructor3": {
+      "name": "Emmanuel Tarimo",
+      "specialization": "Data scientist, Web Dev, Designer",
+      "desc": "データサイエンティストおよびアナリストとして、複雑なデータの収集、クリーニング、解析、予測モデルの作成、実用的な洞察の提供に優れています。パターンを発見し、データレポートを生成します。さらに、Pythonフレームワークを使用して、動的かつ安全なウェブサイトを構築する熟練したウェブ開発者でもあります。 "
+    },
+    "instructor4": {
+      "name": "Nuha Nuru Ayubi",
+      "specialization": "Automation Dev, Data Analyst.",
+      "desc": "Nuha NuruはPythonやPandasやC言語やRPA(Robotic Process Automation)としてUiPath プラットフォームを使用するの経験豊富なエンジニアです。Nuha Nuruは、新しいテクノロジーを探求し、発見し続ける日々のコミットメントを持つ、イノベーションへの情熱を示す個人です。"
+    },
+    "instructor5": {
+      "name": "Gerry Sabar",
+      "specialization": "Software Engineer",
+      "desc": "8年間経験豊富なソフト開発とテスティング、例えば分析やデータモデリングやでサインやプロジェクト納品や色んな組織的なレベルと共同作業をしております。リーダーからビジネスにマネージする事です。"
+    }
+  },
+  "mentors": {
+    "mentor1": {
+      "name": "Saki Yanagihara",
+      "specialization": "Enterprenurship, Mentoring skills.",
+      "desc": "多文化的なバックグラウンドを持つ国際教育愛好者で、現在は日本で教育の修士号を取得中です。異文化理解と学術的成長を促進することに情熱を傾けております。"
+    },
+    "mentor2": {
+      "name": "Naho Chujo",
+      "specialization": "Researcher, Analysist, Mentoring.",
+      "desc": "ケニアでの元国際NPO社会福祉士およびグリーンディ協会代表理事しかも、経験豊富なキャリア教育コミュニティマネジメントです。GCIデータサイエンスの２０２３年の夏に卒業生です。現在はデータサイエンスとして働いております。"
+    },
+    "mentor3": {
+      "name": "Douglas Fortunatus",
+      "specialization": "Software Engineer.",
+      "desc": "電子商取引からAPIsまでにエンジニアにプロジェクトを開発の案内しております。Node-APIの開発を共同作業するや学生達に学ぶ事をサポートするやプロジェクト作ってるのがチームワークでReact, HTML, CSS, PHP, Laravel, Vue.js, Phyton, Javascriptを使っております。"
+    }
+  },
+  "country": {
+    "title": "国々",
+    "country1": {
+      "name": "Tanzania",
+      "desc": "タンザニアでは、IT分野での労働力の訓練に向けた強化された取り組みが行われていますが、仕事の機会は不足しています。産業の多様化は主要な課題であり、急速に成長しているITおよびソフトウェア産業は重要な主要セクターの1つと見なされています。"
+    },
+    "country2": {
+      "name": "Indonesia",
+      "desc": "インドネシアには教師のスキル向上に関する取り組みは主にコンピュータリテラシーに焦点を当てており、IT教育の課題に対処していません。全国的な拡張計画は明確な戦略がないまま早期の試験段階にあります。また、日本でリモートでまたはオフィスで働くITエンジニアにとって、インドネシアは有望な機会と見なされています。"
+    },
+    "country3": {
+      "name": "Philippines",
+      "desc": "フィリピンでは教育スキルが上がっております。IT教育よりコンピューターエンジニアリングに集中しております。しかも、フィリピンにはITエンジニアリングを上がってる可能性があります。将来では他の国にグローバルチームワークの可能性もあります。"
+    }
+  },
+  "achieve": {
+    "title": "業績 ",
+    "achievement1": {
+      "name": "研修参加者"
+    },
+    "achievement2": {
+      "name": "満足した顧客"
+    },
+    "achievement3": {
+      "name": "受賞した賞"
+    },
+    "achievement4": {
+      "name": "経験年数"
+    }
+  },
+  "News": {
+    "title": "ニュース",
+    "news1": {
+      "date": "2022.May",
+      "desc": "タンザニアの学生に初めてITブートキャンプを行いました。"
+    },
+    "news2": {
+      "date": "2022.Oct Mio Tsunoda",
+      "desc": "ダラジャパンの最高経営責任者はNEXT革新者になりました。 - Develop Next Generation Innovators"
+    },
+    "news3": {
+      "date": "2023.Jan",
+      "desc": "二回目のタンザニア学生にITブートキャンプを行いました。"
+    },
+    "news4": {
+      "date": "2023.July",
+      "desc": "インドネシアの学生に初めてITブートキャンプを行いました。"
+    },
+    "news5": {
+      "date": "2023.Sep Mio Tsunoda",
+      "desc": "ダラジャパンの最高経営責任者はAPT WOMENになりました (ACCELERATION PROGRAM IN TOKYO FOR WOMEN)"
+    }
+  },
+  "company": {
+    "title": "オンラインコース",
+    "home": "ホームページに戻る",
+    "desc": "世界中からの国際的なITの才能を持つ、私たちのITブートキャンプを活用してアプリを構築しましょう！",
+    "course1": {
+      "name": "フルスタックエンジニアコース",
+      "knowledge1": "フロントエンド・バックエンド開発の基礎",
+      "knowledge2": "OSおよびミドルウェアのスキル.",
+      "knowledge3": "クラウドサービスに関する知識とスキル",
+      "knowledge4": "プログラム設計"
+    },
+    "course2": {
+      "name": "機械学習エンジニアコース",
+      "knowledge1": "コーディング開発の基礎",
+      "knowledge2": "フレームワークとライブラリ",
+      "knowledge3": "数学と統計",
+      "knowledge4": "データ分析スキル",
+      "knowledge5": "ユーザーエクスペリエンスデザイン"
+    },
+    "course3": {
+      "name": "UI/UX/ウェブデザイナーコース",
+      "knowledge1": "デザインスキルの基礎",
+      "knowledge2": "マーケティングスキル",
+      "knowledge3": "ユーザー視点"
+    },
+    "course5": {
+      "name": "データアナリストコース",
+      "knowledge1": "プログラミングスキルの基礎",
+      "knowledge2": "数学と統計",
+      "knowledge3": "データベースの知識",
+      "knowledge4": "分析ツール"
+    }
   }
 }

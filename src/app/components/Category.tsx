@@ -1,5 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { useTranslations } from "next-intl";
 
 type CategoryProps = {
   pic: string | StaticImageData; // pic bisa berupa string (URL) atau StaticImageData
@@ -8,11 +9,13 @@ type CategoryProps = {
 };
 
 const Category: React.FC<CategoryProps> = ({ pic, title, desc }) => {
+  const t = useTranslations("content");
+  
   return (
     <div className="text-center">
       <Image width={100} src={pic} alt="pic" className="w-fit mx-auto" />
-      <h2>{title}</h2>
-      <p>{desc}</p>
+      <h2>{t(title)}</h2>
+      <p>{t(desc)}</p>
     </div>
   );
 };

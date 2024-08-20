@@ -6,8 +6,181 @@
     "About": "About",
     "Countries": "Countries",
     "Services": "Services",
+    "Company": "Company Courses",
     "News": "News",
     "Members": "Members",
     "Contact": "Contact Us"
+  },
+  "hero": {
+    "Heading": "Produce a global Tech leader beyond borders.",
+    "Paragraph": "Becoming Global Tech Leaders Together. We empower people with advanced tech skills, crossing borders to create future tech innovators. Join us on this journey to become a global tech leader.",
+    "button": "JOIN US NOW!"
+  },
+  "about": {
+    "Heading": "VISION",
+    "Paragraph": "Designing Futures through Belief and IT",
+    "Heading1": "MISSION",
+    "Paragraph2": "To achieve the goal to be an experienced professional and gain the soft skills to work as one global team.",
+    "About": "About Us",
+    "ask": "Why 'Imani Hacking'?",
+    "reason": "Welcome to IMANI HACKING BOOTCAMP, where we transform knowledge into formidable skills. We're a dedicated tech training center committed to helping you reach your IT potential. With expert-designed bootcamp programs for beginners and professionals, we offer flexibility through online learning. Join us on the journey to IT excellence and innovation.",
+    "button": "Read More"
+  },
+  "content": {
+    "Title": "Contents",
+    "Heading": "Video Session",
+    "Paragraph": "Students will have a course that given from the lectures, in order to have a great knowledge of the technology that student want to be in the future",
+    "Heading2": "Mentoring Session",
+    "Paragraph2": "Students meet their mentors in order to have a disscuss about the projects, soft skills and hard skills, also asking about the future plan of the Students.",
+    "Heading3": "Mentoring Session",
+    "Paragraph3": "In weekly, Student will have a zoom live lecture about the development skills including, self development, soft skills, hard skills, in order to be ready working as engineer in the future after participating in our porgramming bootcamp.",
+    "Lecture Session": "In weekly, Student will have a zoom live lecture about the development skills including, self development, soft skills, hard skills, in order to be ready working as engineer in the future after participating in our porgramming bootcamp.",
+    "Button": "Read more",
+    "Title2": "Our lesson category",
+    "Subheading1": "Web Development",
+    "Subparagraph1": "Basics of front end development -HTML / Javascript / Phyton",
+    "Subheading2": "User Experience Design",
+    "Subparagraph2": "Basics of Design concepts and skills including: Usability, Accessibility, User Interface",
+    "Subheading3": "Information & Frameworks",
+    "Subparagraph3": "A structure for the code, including Bulma CSS Framework etc",
+    "Subheading4": "Database & Security",
+    "Subparagraph4": "Recognize and prevent common security exploits such as SQL-Injection / XSS etc",
+    "Subheading5": "Soft skills",
+    "Subparagraph5": "Problem-solving / Decision-making / Critical Thinking / Global mind-set / Communication as Team",
+    "Subheading6": "Presentation skills",
+    "Subparagraph6": "How to Effectively communicate Tech info to non-tech audience",
+    "Button2": "Read more"
+  },
+  "instructors": {
+    "title": "Instructors",
+    "instructor1": {
+      "name": "Dr Kelechukwu N. Onwukamike",
+      "specialization": "Researcher of Chemistry, Coarching",
+      "desc": "Developing sustainable cellulose-based materials, mentoring students, and holding dual PhDs in Organic and Polymer Chemistry from KIT Germany and University of Bordeaux France, I'm a Research Scientist at Procter &amp Gamble Germany, emphasizing human capacity development."
+    },
+    "instructor2": {
+      "name": "Daniel Joseph Makyao",
+      "specialization": "Software Engineer",
+      "desc": "Daniels is experienced software developer skilled in Python, Django, PostgreSQL, and MERN stack. Committed to continuous learning and staying current with the latest tech trends, emphasizing precision in all project aspects, from improving features to developing new products. Skills: Python, Java, Java Script, React."
+    },
+    "instructor3": {
+      "name": "Emmanuel Tarimo",
+      "specialization": "Data scientist, Web Dev, Designer",
+      "desc": "As a data scientist and data analyst, I excel in collecting, cleaning, and analyzing complex data, crafting predictive models, and delivering actionable insights. Also a web developer, building dynamic and secure websites using Python frameworks."
+    },
+    "instructor4": {
+      "name": "Nuha Nuru Ayubi",
+      "specialization": "Automation Dev, Data Analyst.",
+      "desc": "Nuha Nuru is an experienced professional in Python, Pandas, C, and Robotic Process Automation (RPA) using the UiPath platform. He is a dedicated individual with a daily commitment to exploring and discovering new technologies."
+    },
+    "instructor5": {
+      "name": "Gerry Sabar",
+      "specialization": "Software Engineer",
+      "desc": "8+ years of hands-on experience in software development and testing, spanning analysis, data modeling, design, project delivery, and collaboration across all organizational levels."
+    }
+  },
+  "mentors": {
+    "title": "Mentors",
+    "mentor1": {
+      "name": "Saki Yanagihara",
+      "specialization": "Enterprenurship, Mentoring skills.",
+      "desc": "International education enthusiast with a multicultural background, pursuing a Master's in Education in Japan. A new business builder, adaptable in various roles for social development projects, passionate about fostering understanding and academic growth, with a broad professional network."
+    },
+    "mentor2": {
+      "name": "Naho Chujo",
+      "specialization": "Researcher, Analysist, Mentoring.",
+      "desc": "Former international NPO social worker in Kenya, now the Director of Greendy Association, with expertise in community management, research, problem-solving, and mentoring. GCI data science summer school 2020 alumnus, currently in a data science startup role."
+    },
+    "mentor3": {
+      "name": "Douglas Fortunatus",
+      "specialization": "Software Engineer.",
+      "desc": "Guiding engineers in executing diverse development projects, including E-commerce sites and APIs, and collaborating on Node-API development. Proficient in React, HTML, CSS, PHP, Laravel, Vue.js, Python, and JavaScript. As a work officer, she shares project management expertise. Skills: PHP, Java, JavaScript, Swift, Node.js, React.js, Laravel."
+    }
+  },
+  "country": {
+    "title": "Countries",
+    "country1": {
+      "name": "Tanzania",
+      "desc": "In Tanzania, there is an intensified effort to train the workforce in the field of IT, but there is a shortage of job opportunities. Industrial diversification is a key challenge, while the rapidly growing IT and software industry is considered one of the vital primary sectors."
+    },
+    "country2": {
+      "name": "Indonesia",
+      "desc": "In Indonesia, efforts to boost teacher skills mainly center on computer literacy rather than addressing IT education issues. Nationwide expansion plans are in early pilot stages without a clear strategy. Indonesia is also seen as a promising opportunity for IT engineers to work in Japan remotely or in-office."
+    },
+    "country3": {
+      "name": "Philippines",
+      "desc": "In the Philippines, educators' skills are improving, with a focus on computer literacy rather than IT education. Nationwide expansion is in early pilot stages with no clear strategy. The Philippines is seen as a chance for global collaboration and relationship-building."
+    }
+  },
+  "achieve": {
+    "title": "Our Achievements",
+    "achievement1": {
+      "name": "TRAINING PARTICIPANTS"
+    },
+    "achievement2": {
+      "name": "HAPPY CUSTOMERS"
+    },
+    "achievement3": {
+      "name": "PRIZE WON"
+    },
+    "achievement4": {
+      "name": "YEARS OF EXPERIENCE"
+    }
+  },
+  "News": {
+    "title": "News",
+    "news1": {
+      "date": "2022.May",
+      "desc": "We Start Bootcamp Program for the 1st student from Tanzania."
+    },
+    "news2": {
+      "date": "2022.Oct Mio Tsunoda",
+      "desc": "CEO of Darajapan Inc. is selected as SIDO NEXT INNOVATOR - Develop Next Generation Innovators."
+    },
+    "news3": {
+      "date": "2023.Jan",
+      "desc": "We start IT bootcamp for 2sd student from Tanzania."
+    },
+    "news4": {
+      "date": "2023.July",
+      "desc": "We start IT bootcamp for 1st student from Indonesia."
+    },
+    "news5": {
+      "date": "2023.Sep Mio Tsunoda",
+      "desc": "CEO of Darajapan Inc. is selected as APT Women (ACCELERATION PROGRAM IN TOKYO FOR WOMEN)"
+    }
+  },
+  "company": {
+    "title": "Online Courses",
+    "home": "Back To Home",
+    "desc": "Your Journey to Excellence Begins Here: Partner with Our International IT Bootcamp and Access Top Tech Talent from Across the World.",
+    "course1": {
+      "name": "Full Stack Engineer Course",
+      "knowledge1": "Basics of Frontend Backend Development",
+      "knowledge2": "Skills for OS and Middleware.",
+      "knowledge3": "Knowledge and Skills in Cloud Services",
+      "knowledge4": "Program Design"
+    },
+    "course2": {
+      "name": "Machine Learning Engineer Course",
+      "knowledge1": "Basics of Coding Development",
+      "knowledge2": "Frameworks and Libraries",
+      "knowledge3": "Mathematics and Statistics",
+      "knowledge4": "Data Analysis Skills",
+      "knowledge5": "User Experience Design"
+    },
+    "course3": {
+      "name": "UI/UX/Web Designer Course",
+      "knowledge1": "Basics of Design Skills",
+      "knowledge2": "Marketing Skills",
+      "knowledge3": "User Perspectives"
+    },
+    "course5": {
+      "name": "Data Analyst Course",
+      "knowledge1": "Basics of Programming Skills",
+      "knowledge2": "Mathematics and Statistics",
+      "knowledge3": "Database Knowledge",
+      "knowledge4": "Analysis Tools"
+    }
   }
 }

@@ -1,9 +1,11 @@
+import { useTranslations } from "next-intl";
 import picture1 from "../../../public/images/assets1/Picture4.png";
 import picture2 from "../../../public/images/assets1/Picture5.png";
 import picture3 from "../../../public/images/assets1/Picture6.png";
 import picture4 from "../../../public/images/assets1/Picture7.png";
 import picture5 from "../../../public/images/assets1/Picture8.png";
 import picture6 from "../../../public/images/assets1/Picture9.png";
+
 const Data = [
   {
     id: 1,
