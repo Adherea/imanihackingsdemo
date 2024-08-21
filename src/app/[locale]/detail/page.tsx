@@ -7,18 +7,14 @@ import picture2 from "../../../../public/images/contents/Picture2.jpg";
 import picture3 from "../../../../public/images/contents/Picture3.jpg";
 import training from "../../../../public/images/contents/trainings.png";
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 function Page() {
   const t = useTranslations("contentpage");
-  const router = useRouter();
   const pathname = usePathname();
 
-  const handleHomeRedirect = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const currentLocale = pathname.split("/")[1];
-    router.push(`/${currentLocale}/`);
-  };
+  const currentLocale = pathname.split("/")[1];
 
   return (
     <section>
@@ -29,9 +25,9 @@ function Page() {
         <div>
           <ul className="w-fit mx-auto">
             <li>
-              <a href="/" onClick={handleHomeRedirect} className="group relative text-center cursor-pointer">
+              <Link href={`/${currentLocale}/`} className="group relative text-center cursor-pointer">
                 {t("home")}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

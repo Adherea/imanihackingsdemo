@@ -2,29 +2,25 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 function Course() {
   const t = useTranslations("company");
-  const router = useRouter();
   const pathname = usePathname();
-  const handleHomeRedirect = () => {
-    const currentLocale = pathname.split("/")[1];
-    router.push(`/${currentLocale}/`);
-  };
 
   return (
     <section>
-      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0 ">
+      <nav className="flex items-center text-white justify-between md:px-12 px-5 text-xl bg-[#79c9e0] ">
         <div>
           <Image src="/images/logo.png" alt="logo" width={140} height={200} />
         </div>
         <div>
           <ul className="w-fit mx-auto">
             <li>
-              <a onClick={handleHomeRedirect} className="group relative text-center cursor-pointer">
+              <Link href={`/${pathname.split("/")[1]}/`} className="group relative text-center cursor-pointer">
                 {t("home")}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

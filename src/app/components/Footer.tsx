@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
@@ -8,8 +8,8 @@ function Footer() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3   grid-cols-1 py-11 lg:px-32 px-7">
         <div className="">
           <div className="text-white ">
-            <h1 className="text-2xl md:text-3xl font-semibold">CODING FIRST | DARAJAPAN</h1>
-            <p className="text-xl  md:text-2xl py-4">Empower individuals with cutting-edge tech skills, transcending borders, and shaping future tech innovators. Join us on this transformative journey to become a global tech leader.</p>
+            <h1 className="text-2xl md:text-3xl font-semibold"> DARAJAPAN</h1>
+            <p className="text-xl  md:text-xl py-4">Empower individuals with cutting-edge tech skills, transcending borders, and shaping future tech innovators. Join us on this transformative journey to become a global tech leader.</p>
           </div>
         </div>
         <div className="py-7 lg:py-0">
@@ -24,6 +24,9 @@ function Footer() {
           />
         </div>
         <div className="text-white flex flex-col">
+          <a href="https://www.darajapan.net/dara" target="_blank">
+            <FontAwesomeIcon icon={faGlobe} width={30} /> www.darajapan.net/dara
+          </a>
           <a href="">
             <FontAwesomeIcon icon={faInstagram} width={30} /> Instagram
           </a>
@@ -31,11 +34,11 @@ function Footer() {
             <FontAwesomeIcon icon={faEnvelope} width={30} /> info@darajapan.com
           </a>
           <a href="">
-            <FontAwesomeIcon icon={faWhatsapp} width={30} /> +62 877 6967 8988 91 Kanda Sakumagashi, Chiyoda City, Tokyo 101-0026, Japan
+            <FontAwesomeIcon icon={faWhatsapp} width={30} /> +81-90-4703-6610 Kanda Sakumagashi, Chiyoda City, Tokyo 101-0026, Japan
           </a>
         </div>
       </div>
-      <p className="text-center text-white mx-auto">© 2023 Imani Academy | Darajapan</p>
+      <p className="text-center text-white mx-auto">© 2023 Imani Hacking | Darajapan</p>
     </footer>
   );
 }

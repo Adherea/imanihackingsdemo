@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import logo from "../../../../public/images/logo.png";
 
-function page() {
+function Page() {
   return (
     <section>
       <nav className=" flex items-center  text-white justify-between md:px-12 px-5  text-xl bg-[#79c9e0]">
@@ -22,8 +22,8 @@ function page() {
       </nav>
       <div className="container mx-auto md:py-10 py-0 px-6">
         <div className="bg-white rounded-md py-6 md:px-24 px-5 md:max-w-6xl mx-auto my-14">
-          <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium ">Registration</h1>
-          <p className="text-center py-3 text-gray-400">By registering, you agree to the terms and conditions of Imani Hacking. </p>
+          <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium">Registration</h1>
+          <p className="text-center py-3 text-gray-400">By registering, you agree to the terms and conditions of Imani Hacking.</p>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 py-8">
             <div className="">
               <div className="flex flex-col">
@@ -32,7 +32,6 @@ function page() {
                 </label>
                 <input className="border rounded-md w-full p-2 mt-3 bg-white" type="text" placeholder="Enter Your Fullname" />
               </div>
-              y
               <div className="flex flex-col py-5">
                 <label className="font-semibold" htmlFor="">
                   Email
@@ -66,4 +65,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

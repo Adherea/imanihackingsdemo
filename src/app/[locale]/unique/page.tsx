@@ -10,18 +10,13 @@ import picture6 from "../../../../public/images/contents/Picture6.jpg";
 import picture7 from "../../../../public/images/contents/uniquqness.png";
 import picture8 from "../../../../public/images/vectors/Jan43.jpg";
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Page() {
   const t = useTranslations("uniq");
-  const router = useRouter();
   const pathname = usePathname();
-  const handleHomeRedirect = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const currentLocale = pathname.split("/")[1];
-    router.push(`/${currentLocale}/`);
-  };
+  const currentLocale = pathname.split("/")[1];
 
   return (
     <section>
@@ -32,9 +27,9 @@ function Page() {
         <div>
           <ul className="w-fit mx-auto">
             <li>
-              <a href="/" onClick={handleHomeRedirect} className="group relative text-center cursor-pointer">
+              <Link href={`/${currentLocale}/`} className="group relative text-center cursor-pointer">
                 {t("home")}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

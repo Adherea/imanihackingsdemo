@@ -6,12 +6,11 @@ import logo from "../../../../public/images/logo.png";
 import historylogo from "../../../../public/images/vectors/history.png";
 import globalLogo from "../../../../public/images/vectors/laptop.png";
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"; // Hanya gunakan usePathname
 
 function About() {
   const t = useTranslations("aboutpage");
-  const router = useRouter();
-  const pathname = usePathname();
+  const pathname = usePathname(); // Ambil pathname dari usePathname
 
   return (
     <section className="bg-[#F8F8F8]">
