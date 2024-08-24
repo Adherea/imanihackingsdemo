@@ -66,7 +66,7 @@
     "instructor3": {
       "name": "Emmanuel Tarimo",
       "specialization": "Data scientist, Web Dev, Designer",
-      "desc": "As a data scientist and data analyst, I excel in collecting, cleaning, and analyzing complex data, crafting predictive models, and delivering actionable insights. Also a web developer, building dynamic and secure websites using Python frameworks."
+      "desc": "As a data scientist and data analyst, I excel in collecting, cleaning, and analyzing complex data, crafting predictive models, and delivering actionable insights. Also he is a web developer, building dynamic and secure websites using Python frameworks."
     },
     "instructor4": {
       "name": "Nuha Nuru Ayubi",
@@ -203,6 +203,7 @@
     "session3": "Lesson Sessions",
     "desc3": "Students enrolled in the same course participate in thematic online sessions covering topics such as technology, soft skills, projects, and engage in group discussions.",
     "title2": "Our Training process",
+    "title3": "Our Updated Schedule",
     "date1": "20th, 21st, 24th, 26th April",
     "agenda": "Screening",
     "date2": "1st May ~ 21th May",

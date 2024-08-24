@@ -26,8 +26,8 @@ function Course() {
         </div>
       </nav>
       <div>
-        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium pt-12">{t("title")}</h1>
-        <h1 className="text-center max-w-4xl md:text-2xl mx-auto py-10">{t("desc")}</h1>
+        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-2xl md:text-3xl font-medium pt-12">{t("title")}</h1>
+        <h1 className="text-center max-w-3xl md:text-2xl mx-auto py-10 px-2 text-lg">{t("desc")}</h1>
 
         <div className="bg-gray-50 p-8">
           <div className="container mx-auto grid lg:grid-cols-4 grid-cols-1 gap-8">
@@ -35,7 +35,7 @@ function Course() {
               <h2 className="text-xl font-bold mb-4">{t("course1.name")}</h2>
               <ul className="list-disc ml-4 space-y-2">
                 <li>
-                  <strong>{t("course1.knowledge1")}</strong>
+                  <strong className="md:text-sm text-base">{t("course1.knowledge1")}</strong>
                   <ul className="list-disc ml-6">
                     <li>Python (Flask, FastAPI, Django, Selenium)</li>
                     <li>Go (Echo and Gin) / Swift</li>

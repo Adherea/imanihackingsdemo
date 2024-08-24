@@ -45,7 +45,7 @@ function News() {
   return (
     <section id="news" data-aos="fade-up">
       <div className="max-w-7xl mx-auto">
-        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium my-5">{t("title")}</h1>
+        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-3xl md:text-4xl font-medium my-5">{t("title")}</h1>
         <div className="">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}

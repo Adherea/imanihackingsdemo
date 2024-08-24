@@ -6,11 +6,11 @@ import logo from "../../../../public/images/logo.png";
 import historylogo from "../../../../public/images/vectors/history.png";
 import globalLogo from "../../../../public/images/vectors/laptop.png";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation"; // Hanya gunakan usePathname
+import { usePathname } from "next/navigation";
 
 function About() {
   const t = useTranslations("aboutpage");
-  const pathname = usePathname(); // Ambil pathname dari usePathname
+  const pathname = usePathname();
 
   return (
     <section className="bg-[#F8F8F8]">
@@ -36,7 +36,7 @@ function About() {
             <Image src={historylogo} width={400} alt="historyLogo" />
           </div>
           <div>
-            <p className="max-w-2xl">{t("desc")}</p>
+            <p className="max-w-2xl text-lg md:text-2xl lg:text-xl">{t("desc")}</p>
           </div>
         </div>
         <div className="flex lg:flex-row-reverse flex-col px-8 items-center gap-5 justify-between py-12">
@@ -44,15 +44,15 @@ function About() {
             <Image src={globalLogo} width={260} alt="globalLogo" />
           </div>
           <div>
-            <h1 className="py-7 text-4xl font-semibold">{t("subtitle")}</h1>
-            <p className="max-w-2xl text-xl">{t("desc2")}</p>
+            <h1 className="py-7 text-2xl md:text-3xl font-semibold">{t("subtitle")}</h1>
+            <p className="max-w-2xl text-lg md:text-2xl lg:text-xl">{t("desc2")}</p>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto text-center py-10 md:px-5 px-3">
-        <h1 className="text-xl md:text-4xl py-9">{t("ready")}</h1>
-        <p className="max-w-4xl mx-auto py-4">{t("subready")}</p>
+        <h1 className="text-xl md:text-3xl py-9">{t("ready")}</h1>
+        <p className="max-w-4xl mx-auto py-4 md:text-xl">{t("subready")}</p>
         <div className="py-10">
           <Link href={`/${pathname.split("/")[1]}/register`} className="bg-[#407BFF] text-white rounded-md py-3 px-5">
             {t("button")}

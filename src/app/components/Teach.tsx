@@ -70,7 +70,7 @@ function Teach() {
     <>
       <section id="members" data-aos="fade-up">
         <div className="">
-          <div className="container mx-auto  px-8 py-5">
+          <div className="container mx-auto px-5 md:px-8 py-5">
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={50}
@@ -82,7 +82,7 @@ function Teach() {
               onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
-                <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium my-5">{t("title")}</h1>
+                <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-3xl md:text-4xl font-medium my-5">{t("title")}</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hover:cursor-grab active:cursor-grabbing ">
                   {instructors.map((instructor, index) => (
                     <div key={index} className="bg-[#58BBFF] rounded-2xl flex flex-col">

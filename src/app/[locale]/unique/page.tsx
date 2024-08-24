@@ -35,23 +35,23 @@ function Page() {
         </div>
       </nav>
       <div className="py-10">
-        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-4xl font-medium">{t("title")}</h1>
+        <h1 className="border-b-2 border-[#0E9AC5] w-fit mx-auto text-3xl font-medium">{t("title")}</h1>
 
         <div className="py-14 px-8">
           <div className="max-w-7xl mx-auto flex md:flex-col-reverse lg:flex-row flex-col-reverse items-center justify-between">
             <div>
               <h1 className="py-5 text-2xl md:text-3xl">{t("session1")}</h1>
-              <p className="max-w-xl">{t("desc1")}</p>
+              <p className="max-w-xl text-xl md:text-lg">{t("desc1")}</p>
             </div>
 
             <div className="max-w-xl">
               <Image src={picture4} alt="image" />
             </div>
           </div>
-          <div className="max-w-7xl mx-auto flex md:flex-col-reverse py-7 lg:flex-row flex-col-reverse items-center justify-between">
+          <div className="max-w-7xl mx-auto  flex md:flex-col-reverse py-16 lg:flex-row flex-col-reverse items-center justify-between">
             <div>
               <h1 className="py-5 text-2xl md:text-3xl">{t("session2")}</h1>
-              <p className="max-w-xl">{t("desc2")}</p>
+              <p className="max-w-xl text-xl md:text-lg">{t("desc2")}</p>
             </div>
 
             <div className="max-w-xl">
@@ -61,7 +61,7 @@ function Page() {
           <div className="max-w-7xl mx-auto flex md:flex-col-reverse lg:flex-row flex-col-reverse items-center justify-between">
             <div>
               <h1 className="py-5 text-2xl md:text-3xl">{t("session3")}</h1>
-              <p className="max-w-xl">{t("desc3")}</p>
+              <p className="max-w-xl text-xl md:text-lg">{t("desc3")}</p>
             </div>
 
             <div className="max-w-xl">
@@ -86,23 +86,23 @@ function Page() {
             <div className="flex items-center gap-16 md:flex-row flex-col-reverse">
               <div className="py-9">
                 <h2 className="text-xl">
-                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-2xl" icon={faCheckToSlot} width={30} />
+                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-xl" icon={faCheckToSlot} width={30} />
                   技術開発のスキル
                 </h2>
-                <h2 className="text-xl py-2">
-                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-2xl" icon={faCheckToSlot} width={30} />
+                <h2 className="text-lg py-2">
+                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-xl" icon={faCheckToSlot} width={30} />
                   会社にインタビューする事
                 </h2>
-                <h2 className="text-xl ">
-                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-2xl" icon={faCheckToSlot} width={30} />
+                <h2 className="text-lg ">
+                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-xl" icon={faCheckToSlot} width={30} />
                   職業の昇進
                 </h2>
-                <h2 className="text-xl py-2">
-                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-2xl" icon={faCheckToSlot} width={30} />
+                <h2 className="text-lg py-2">
+                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-xl" icon={faCheckToSlot} width={30} />
                   業界のつながり
                 </h2>
-                <h2 className="text-xl">
-                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-2xl" icon={faCheckToSlot} width={30} />
+                <h2 className="text-lg">
+                  <FontAwesomeIcon className="mx-2 text-[#2568EF] text-xl" icon={faCheckToSlot} width={30} />
                   指導とサポート
                 </h2>
               </div>

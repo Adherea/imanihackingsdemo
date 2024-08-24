@@ -36,7 +36,7 @@ function About() {
         </div>
       </div>
       <div className="py-16">
-        <h1 className="text-center font-medium text-4xl">{t("About")}</h1>
+        <h1 className="text-center font-medium text-2xl md:text-3xl">{t("About")}</h1>
         <div className="flex md:flex-row flex-col justify-between max-w-6xl mx-auto gap-16 py-20 px-10 md:px-20" data-aos="fade-up">
           <div>
             <Image className="fancyBorder border-4 border-[#58BBFF] rounded-[29%_71%_68%_32%_/_24%_25%_75%_76%]" src={univ} width={400} alt="univ" />
