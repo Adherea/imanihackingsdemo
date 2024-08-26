@@ -10,8 +10,8 @@ function Page() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
 
   const router = useRouter();
 
@@ -30,14 +30,13 @@ function Page() {
       });
 
       const text = await response.text();
-      // console.log("Raw response:", text);
 
       if (!response.ok) {
         if (text.includes("Email already exists")) {
           Swal.fire({
             icon: "warning",
             title: "Email already exists",
-            text: "The email you entered is already registered. Please use different Email.",
+            text: "The email you entered is already registered. Please use a different Email.",
           });
         } else {
           throw new Error(text || "Registration failed. Please try again.");
@@ -46,9 +45,8 @@ function Page() {
       }
 
       const data = JSON.parse(text);
-      // console.log("Parsed response:", data);
       setSuccess("Registration successful!");
-      setError("");
+      setError(null);
 
       localStorage.setItem("username", username);
 
@@ -63,16 +61,26 @@ function Page() {
       setEmail("");
       setUsername("");
       setPassword("");
-    } catch (error) {
-      console.error("Error during registration:", error);
-      setError(error.message);
-      setSuccess("");
+    } catch (err) {
+      console.error("Error during registration:", err);
 
-      Swal.fire({
-        icon: "error",
-        title: "Registration failed",
-        text: "Registration failed, please fill the form to complete the registration process!",
-      });
+      if (err instanceof Error) {
+        setError(err.message);
+        Swal.fire({
+          icon: "error",
+          title: "Registration failed",
+          text: err.message,
+        });
+      } else {
+        setError("An unknown error occurred.");
+        Swal.fire({
+          icon: "error",
+          title: "Registration failed",
+          text: "Registration failed, please fill out the form correctly!",
+        });
+      }
+
+      setSuccess(null);
     }
   };
 

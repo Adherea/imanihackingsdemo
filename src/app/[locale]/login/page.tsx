@@ -22,7 +22,7 @@ function LoginPage() {
         },
         body: JSON.stringify({
           email,
-          username: email, // Mengirim email sebagai username jika diperlukan
+          username: email, 
           password,
         }),
       });
