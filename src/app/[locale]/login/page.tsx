@@ -22,7 +22,7 @@ function LoginPage() {
         },
         body: JSON.stringify({
           email,
-          username: email, 
+          username: email,
           password,
         }),
       });
@@ -84,7 +84,7 @@ function LoginPage() {
           </ul>
         </div>
       </nav>
-      <div className="container  mx-auto my-20 px-4">
+      <div className="container  mx-auto my-10 md:my-20 px-4">
         <div className="md:max-w-2xl mx-auto bg-white p-8 border border-gray-300 rounded-md ">
           <h1 className="text-2xl font-bold text-center mb-4 md:pb-6 pb-3">Login</h1>
           <div className="mb-4">
@@ -115,7 +115,7 @@ function LoginPage() {
               placeholder="Enter your password"
             />
           </div>
-          <button onClick={handleLogin} className={`w-full bg-blue-500 text-white py-2 rounded-md font-bold ${loading ? "opacity-50" : ""}`} disabled={loading}>
+          <button onClick={handleLogin} className={`w-full mt-10 md:mt-8 bg-blue-500 text-white py-2 rounded-md font-bold ${loading ? "opacity-50" : ""}`} disabled={loading}>
             {loading ? "Logging in..." : "Log In"}
           </button>
           <p className="text-center py-4">
