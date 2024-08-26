@@ -119,7 +119,7 @@ function LoginPage() {
             {loading ? "Logging in..." : "Log In"}
           </button>
           <p className="text-center py-4">
-            Doesn't have an account yet?{" "}
+            Don't have an account yet?{" "}
             <Link href={"/register"} className="text-blue-400 hover:underline">
               Create one!
             </Link>
