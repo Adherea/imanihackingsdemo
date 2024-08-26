@@ -23,6 +23,7 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-i18next": "^15.0.1",
+    "sweetalert2": "^11.12.4",
     "swiper": "^11.1.9"
   },
   "devDependencies": {

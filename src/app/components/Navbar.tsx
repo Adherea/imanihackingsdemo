@@ -1,11 +1,13 @@
+"use client";
 import { useState, useRef, useEffect, ChangeEvent } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import logo from "../../../public/images/logo.png";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
+import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 
 export default function Navbar() {
@@ -13,6 +15,7 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(true);
   const [contactPopup, setContactPopup] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [username, setUsername] = useState<string | null>(null);
   const router = useRouter();
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -35,6 +38,12 @@ export default function Navbar() {
     if (currentLocale !== savedLocale) {
       router.replace(`/${savedLocale}${pathname.split("/").slice(2).join("/")}`);
     }
+
+    const storedUsername = localStorage.getItem("username");
+    // console.log("Stored username from localStorage:", storedUsername);
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
   }, [pathname]);
 
   const toggleNavbar = () => {
@@ -45,28 +54,46 @@ export default function Navbar() {
     setContactPopup((prevState) => !prevState);
   };
 
+  const handleLogout = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You will be logged out from your session now.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Yes",
+      cancelButtonText: "No",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        localStorage.removeItem("username");
+        setUsername(null);
+
+        Swal.fire({
+          title: "Logged Out!",
+          text: "You have successfully logged out.",
+          icon: "success",
+          confirmButtonText: "OK",
+        }).then(() => {
+          router.push("/");
+        });
+      }
+    });
+  };
+
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (formRef.current) {
-      emailjs
-        .sendForm(
-          "service_ywze8t3", // Ganti dengan Service ID
-          "template_a9xuyc4", // Ganti dengan Template ID
-          formRef.current,
-          "Vcei92itv2gfb6GLz" // Ganti dengan User ID
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            alert("Message sent successfully!");
-            toggleContactPopup();
-          },
-          (error) => {
-            console.log(error.text);
-            alert("Failed to send the message, please try again.");
-          }
-        );
+      emailjs.sendForm("service_ywze8t3", "template_a9xuyc4", formRef.current, "Vcei92itv2gfb6GLz").then(
+        (result) => {
+          // console.log(result.text);
+          alert("Message sent successfully!");
+          toggleContactPopup();
+        },
+        (error) => {
+          // console.log(error.text);
+          alert("Failed to send the message, please try again.");
+        }
+      );
     }
   };
 
@@ -144,7 +171,7 @@ export default function Navbar() {
           <div className="overlay" onClick={toggleNavbar}>
             <div className="popup-content" onClick={(e) => e.stopPropagation()}>
               <FontAwesomeIcon icon={faXmark} width={20} className={`popup-close`} onClick={toggleNavbar} />
-              <ul className="flex flex-col items-center gap-4">
+              <ul className="flex flex-col items-center gap-4 w-full">
                 <li>
                   <a href={"#about"} className="group relative custom-link">
                     {t("About")}
@@ -175,17 +202,57 @@ export default function Navbar() {
                     {t("Contact")}
                   </button>
                 </li>
+
+                {username ? (
+                  <>
+                    <li className="w-full bg-[#FF5081] py-1 px-3 rounded-md text-white border-2 border-[#FF5081] hover:border-white duration-200">
+                      <button className="" onClick={handleLogout}>
+                        <span className="px-2">Log Out</span>
+                        <FontAwesomeIcon icon={faArrowRightFromBracket} />
+                      </button>
+                    </li>
+                  </>
+                ) : (
+                  <>
+                    {" "}
+                    <li className="w-full bg-blue-400 py-1 px-3 rounded-md text-white border-2 border-blue-400 hover:border-white duration-200">
+                      <Link href={"/login"} className="">
+                        <span className="px-2">Log In</span>
+                        <FontAwesomeIcon icon={faArrowRightFromBracket} />
+                      </Link>
+                    </li>
+                  </>
+                )}
               </ul>
             </div>
           </div>
         )}
       </div>
 
-      <div>
-        <select className="text-[#000080] bg-transparent rounded-md border border-[#000080] py-1 px-2" onChange={selectChange} value={selectedLanguage}>
-          <option value="en">English</option>
-          <option value="ja">Japanese</option>
-        </select>
+      <div className="flex items-center gap-4">
+        <div>
+          <select className="text-[#000080] bg-transparent rounded-md border border-[#000080] py-1 px-2" onChange={selectChange} value={selectedLanguage}>
+            <option value="en">English</option>
+            <option value="ja">Japanese</option>
+          </select>
+        </div>
+
+        {username && (
+          <div className="hidden lg:block">
+            <button className="bg-red-500 py-2 px-3 rounded-md text-white border-2 border-red-500 hover:border-white duration-200" onClick={handleLogout}>
+              <span className="px-2">Log Out</span>
+              <FontAwesomeIcon icon={faArrowRightFromBracket} />
+            </button>
+          </div>
+        )}
+        {!username && (
+          <div className="hidden lg:block">
+            <Link href={"/login"} className="bg-blue-400 py-2 px-3 rounded-md text-white border-2 border-blue-400 hover:border-white duration-200">
+              <span className="px-2">Log In</span>
+              <FontAwesomeIcon icon={faArrowRightFromBracket} />
+            </Link>
+          </div>
+        )}
       </div>
 
       <div className="md:hidden static" onClick={toggleNavbar}>
