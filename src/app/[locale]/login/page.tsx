@@ -47,7 +47,7 @@ function LoginPage() {
       }).then(() => {
         router.push("/");
       });
-    } catch (error: unknown) {
+    } catch (error) {
       console.error("Error during login:", error);
 
       if (error instanceof Error) {
