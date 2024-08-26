@@ -2,21 +2,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import Swal from "sweetalert2";
 import logo from "../../../../public/images/logo.png";
 
 function Page() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
+
+  const router = useRouter();
 
   const handleRegister = async () => {
-    console.log("Register button clicked");
-    console.log({ email, username, password }); // Log input values
-
     try {
-      const response = await fetch("https://imani-register-service.vercel.app/api/auth/register", {
+      const response = await fetch("/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,27 +29,58 @@ function Page() {
         }),
       });
 
-      console.log("API response status:", response.status); // Log status code
+      const text = await response.text();
 
       if (!response.ok) {
-        const errorData = await response.json();
-        console.error("Error response from API:", errorData); // Log error from API
-        throw new Error(errorData.error || "Registration failed. Please try again.");
+        if (text.includes("Email already exists")) {
+          Swal.fire({
+            icon: "warning",
+            title: "Email already exists",
+            text: "The email you entered is already registered. Please use a different Email.",
+          });
+        } else {
+          throw new Error(text || "Registration failed. Please try again.");
+        }
+        return;
       }
 
-      const data = await response.json();
-      console.log("API response data:", data); // Log response data
+      const data = JSON.parse(text);
       setSuccess("Registration successful!");
-      setError("");
+      setError(null);
 
-      // Clear the form
+      localStorage.setItem("username", username);
+
+      Swal.fire({
+        icon: "success",
+        title: "Registration successful",
+        text: "You have been successfully registered.",
+      }).then(() => {
+        router.push("/");
+      });
+
       setEmail("");
       setUsername("");
       setPassword("");
-    } catch (error) {
-      console.error("Error during registration:", error); // Log any other errors
-      setSuccess("");
-      setError(error.message);
+    } catch (err) {
+      console.error("Error during registration:", err);
+
+      if (err instanceof Error) {
+        setError(err.message);
+        Swal.fire({
+          icon: "error",
+          title: "Registration failed",
+          text: err.message,
+        });
+      } else {
+        setError("An unknown error occurred.");
+        Swal.fire({
+          icon: "error",
+          title: "Registration failed",
+          text: "Registration failed, please fill out the form correctly!",
+        });
+      }
+
+      setSuccess(null);
     }
   };
 
@@ -74,7 +106,7 @@ function Page() {
           <p className="text-center py-3 text-gray-400">By registering, you agree to the terms and conditions of Imani Hacking.</p>
           {error && <p className="text-red-500 text-center">{error}</p>}
           {success && <p className="text-green-500 text-center">{success}</p>}
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 py-8">
+          <div className=" py-8">
             <div className="flex flex-col">
               <label className="font-semibold" htmlFor="email">
                 Email
@@ -95,8 +127,8 @@ function Page() {
             </div>
           </div>
           <div className="">
-            <div className="">
-              <button className="bg-blue-400 rounded-md text-white py-2 w-full my-5" onClick={handleRegister}>
+            <div className="w-5/12 mx-auto">
+              <button className="bg-blue-400 rounded-md text-white py-2 w-full px-5 text-center my-5" onClick={handleRegister}>
                 Register
               </button>
             </div>
