@@ -47,13 +47,22 @@ function LoginPage() {
       }).then(() => {
         router.push("/");
       });
-    } catch (error) {
-      console.error("Error during login:", error.message);
-      Swal.fire({
-        icon: "error",
-        title: "Login failed",
-        text: `Invalid gmail and password. please make sure account is correct!`,
-      });
+    } catch (error: unknown) {
+      console.error("Error during login:", error);
+
+      if (error instanceof Error) {
+        Swal.fire({
+          icon: "error",
+          title: "Login failed",
+          text: error.message,
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Login failed",
+          text: "An unknown error occurred.",
+        });
+      }
     } finally {
       setLoading(false);
     }
